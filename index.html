@@ -5,10 +5,57 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- Firebase Reference -->
     <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
 </head>
 <body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12" id="playerOne">
+				<div id="header">
+					<h1>ROCK PAPER SCISSORS</h1>
+					<h3>Let the game........ BEGIN!</h3>
+				</div>
 
+			</div>
+		</div>
+		
+			
+		<div class="row">
+		  <div class="col-lg-4" id="playerOneName">Player One Name
+		    <div class="row">
+			  <div class="col-lg-12 rpsChoices" id="playerOneChoices">
+			  	<img src="assets/images/rock.png" class="playerOneChoice" id="p1rock" alt="Rock" />
+			  	<img src="assets/images/paper.png" class="playerOneChoice" id="p1paper" alt="Paper" />
+			  	<img src="assets/images/scissors.png" class="playerOneChoice" id="p1scissors" alt="Scissors" />
+			  </div>
+			  <div class="col-lg-12" id="playerOneWinsLosses">Wins: 0 Losses: 0</div>
+			</div>
+		  </div>
+		  <div class="col-lg-4" id="gamersChoseHeader">Gamers Chose...
+			  <div class="row">
+				<div class="col-lg-6" id="playerOneSelected">Player 1 selected...</div>
+			    <div class="col-lg-6" id="playerTwoSelected">Player 2 selected...</div>
+			  </div>
+			  <div class="row">
+				<div class="col-lg-12" id="displaySingleResults">Player X WINS (or TIE)</div>
+			  </div>
+			</div>
+			<div class="col-lg-4" id="playerTwoName">Player Two Name
+			  <div class="row">
+				<div class="col-lg-12 rpsChoices" id="playerTwoChoices">
+				<img src="assets/images/rock.png" id="P2rock" alt="Rock" />
+			  	<img src="assets/images/paper.png" id="P2paper" alt="Paper" />
+			  	<img src="assets/images/scissors.png" id="P2scissors" alt="Scissors" />
+			  </div>
+				<div class="col-lg-12" id="playerTwoWinsLosses">Wins: 0 Losses: 0</div>
+			  </div>
+			</div>
+		</div>
+		
+
+	</div> <!-- end container -->
+ <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>
