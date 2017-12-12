@@ -1,12 +1,35 @@
 
+body {
+	margin: O auto;
+}
 
+div {
+	margin: 10px;
+	border: solid 1px black;
+}
+
+p {
+	font-size: 55px;
+}
+
+h1 {
+	font-size: 33px;
+	text-align: center;
+}
+
+h3 {
+	font-size: 24px;
+	text-align: center;
+}
 
 .rpsChoices {
 	background-color: #FFEA00;
 	padding: 20px;
+	margin: 20px;
 }
 
-#playerOneSelected, #playerTwoSelected {
-	background-color: #FFEA00;
-	padding: 20px;
+#displayWinLossTie {
+	border: solid 3px red;
+	height: 200px;
 }
+
