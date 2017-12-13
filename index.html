@@ -14,29 +14,36 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-lg-12" id="playerOne">
+            <div class="col-lg-12" id="playerInputsName">
                 <div id="header">
                     <h1>ROCK PAPER SCISSORS</h1>
                     <h3>Let the game........ BEGIN!</h3>
-                    <div id="watchers"></div>
                 </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-lg-12" id="playerOne">
-                <div>
-                    <div id="playerNameInput">display input name with start button</div>
+            <div class="col-lg-4">&nbsp;</div>
+            <div class="col-lg-4" id="playerNameInput">
+               <!--  <div>
+                    <div id="">display input name with start button</div>
                     <div id="welcomePlayerMessage">Changes to "Hi Name, you're Player 1<br>Waiting for Name (Player 2) to choose.</div>
-                </div>
+                </div> -->
             </div>
+            <div class="col-lg-4">&nbsp;</div>
         </div>
 
 
+ <div class="row">
+<div class="col-lg-4" id="playerOneName"></div>
+<div class="col-lg-4" ></div>
+<div class="col-lg-4" id="playerTwoName"></div>
+</div>
+
         <div class="row">
-            <div class="col-lg-4" id="playerOneName">Player One Name
+            <div class="col-lg-4" >
                 <div class="row">
-                    <div class="col-lg-12 rpsChoices" id="playerOneChoices">
+                    <div class="col-lg-12, rpsChoices" id="playerOneChoices">
                         <img src="assets/images/rock.png" class="playerOneChoice" id="p1rock" alt="Rock" />
                         <img src="assets/images/paper.png" class="playerOneChoice" id="p1paper" alt="Paper" />
                         <img src="assets/images/scissors.png" class="playerOneChoice" id="p1scissors" alt="Scissors" />
@@ -45,15 +52,15 @@
                 </div>
             </div>
 
-             <div class="col-lg-4" id="playerOneName">Who won this one?
+             <div class="col-lg-4" >
                 <div class="row">
-                    <div class="col-lg-12" id="displayWinLossTie">display ** WINS of TIE</div>
+                    <div class="col-lg-12" id="displayWinLossTie">display WIN or TIE</div>
                 </div>
             </div>
            
-            <div class="col-lg-4" id="playerTwoName">Player Two Name
+            <div class="col-lg-4" >
                 <div class="row">
-                    <div class="col-lg-12 rpsChoices" id="playerTwoChoices">
+                    <div class="col-lg-12, rpsChoices" id="playerTwoChoices">
                         <img src="assets/images/rock.png" id="p2rock" alt="Rock" />
                         <img src="assets/images/paper.png" id="p2paper" alt="Paper" />
                         <img src="assets/images/scissors.png" id="p2scissors" alt="Scissors" />
@@ -64,7 +71,7 @@
         </div>
     </div>
     <!-- end container -->
-    <script type="text/javascript" src="assets/js/app33.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 
 </html>

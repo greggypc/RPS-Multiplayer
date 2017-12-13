@@ -1,11 +1,7 @@
 
 body {
 	margin: O auto;
-}
-
-div {
-	margin: 10px;
-	border: solid 1px black;
+	box-sizing: border-box;
 }
 
 p {
@@ -23,6 +19,11 @@ h3 {
 }
 
 #playerNameInput {
+	padding: 10px;
+	background-color: gray;
+}
+
+#playerInputsName {
 	margin: 0 auto;
 	padding: 20px;
 }
@@ -30,7 +31,8 @@ h3 {
 .rpsChoices {
 	background-color: #FFEA00;
 	padding: 20px;
-	margin: 20px;
+	margin: 0 auto;
+	
 }
 
 #displayWinLossTie {
