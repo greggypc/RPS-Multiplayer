@@ -63,10 +63,10 @@ connectionsRef.on("value", function(snap) {
 
     // snap is the value of the ref that changed - here it is name and number
   database.ref("players/p1").on("value", function(snap) {
-    
+     
      var p1Name = snap.val().name;
-     var p1Number = snap.val().number;
-     $("#playerNameInput").html("Welcome " + p1Name + ", you are Player " + p1Number);
+     $("#playerNameInput").html("Welcome " + p1Name + ", you are Player 1");
+    
      $("#playerOneName").html(p1Name);
     
   });
@@ -87,12 +87,10 @@ playa2 = $("#pNameToSubmit").val().trim();
         losses: 0
         });
 
-
   database.ref("players/p2").on("value", function(snap) {
     
      var p2Name = snap.val().name;
-     var p2Number = snap.val().number;
-     $("#playerNameInput").html("Welcome " + p2Name + ", you are Player " + p2Number);
+     $("#playerNameInput").html("Welcome " + p2Name + ", you are Player 2");
      $("#playerTwoName").html(p2Name);
   });
 
