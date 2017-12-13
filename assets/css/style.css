@@ -22,6 +22,11 @@ h3 {
 	text-align: center;
 }
 
+#playerNameInput {
+	margin: 0 auto;
+	padding: 20px;
+}
+
 .rpsChoices {
 	background-color: #FFEA00;
 	padding: 20px;
