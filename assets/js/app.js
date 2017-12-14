@@ -87,13 +87,10 @@ else if (snap.numChildren() === 2) {
   else {
     alert("game is full!");
   };
-});  //end connection value listener
-});  //end click function on submit name
-
 
 //================================================================================
  // snap is the value of the ref that changed - here it is name
-  database.ref("players/p1").once("child_added", function(snap) {
+  database.ref("players/p1").on("child_added", function(snap) {
      
       var p1Name = snap.val().name;
      //$("#playerNameInput").html("Welcome " + p1Name + ", you are Player 1");
@@ -102,9 +99,33 @@ else if (snap.numChildren() === 2) {
   });
 
 //================================================================================
-database.ref("players/p2").once("child_added", function(snap) {
+database.ref("players/p2").on("child_added", function(snap) {
     
      var p2Name = snap.val().name;
      //$("#playerNameInput").html("Welcome " + p2Name + ", you are Player 2");
      $("#playerTwoName").html(p2Name);
   });
+
+
+
+});  //end connection value listener
+});  //end click function on submit name
+
+
+//================================================================================
+ // snap is the value of the ref that changed - here it is name
+  // database.ref("players/p1").once("child_added", function(snap) {
+     
+  //     var p1Name = snap.val().name;
+  //    //$("#playerNameInput").html("Welcome " + p1Name + ", you are Player 1");
+  //    $("#playerOneName").html(p1Name);
+
+  // });
+
+//================================================================================
+// database.ref("players/p2").once("child_added", function(snap) {
+    
+//      var p2Name = snap.val().name;
+//      //$("#playerNameInput").html("Welcome " + p2Name + ", you are Player 2");
+//      $("#playerTwoName").html(p2Name);
+//   });
